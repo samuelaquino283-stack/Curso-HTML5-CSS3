@@ -60,15 +60,20 @@ a:hover {
     font-size: 2vw;
     padding: 10px;
     font-size: 3.5vw;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
 }
 
 .poema p {
     font-size: 35px;
-    width: 40%;
+    width: 95%;
     padding: 10px;
     font-size: 3.5vw;
-    text-justify: auto;
+    text-align: justify;
     line-height: 2em;
+    padding-bottom: 2em;
 }
 
 .poema-imagem {
@@ -97,7 +102,8 @@ section {
 
     background-repeat: no-repeat;
     background-size: cover;
-    background-position: center center;
+    background-position: right center;
+    background-attachment: fixed;
 
     padding-left: 30px;
 
@@ -114,6 +120,7 @@ section {
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center center;
+    background-attachment: fixed;
 
     padding-left: 30px;
 
