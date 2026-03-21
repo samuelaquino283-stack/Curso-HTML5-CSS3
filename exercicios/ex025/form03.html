@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+        }
+        
+        input {
+            margin: 5px;
+            padding: 5px;
+            border-radius: 10px;
+            border: 1px solid #000000;
+        }
+
+        button {
+            border-radius: 10px;
+            padding: 5px;
+        }
+
+        #imedia {
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <h1>Test de formulario</h1>
+    <form action="sucesso.html" method="get">
+        
+        <!-- nome completo -->
+
+        <p>
+            <label for="inome">Nome:</label>
+            <input type="text" name="nome" id="inome" required minlength="5" maxlength="30" placeholder="seu nome completo">
+        </p>
+        <!-- Media -->
+
+        <p>
+            <label for="imedia">Média:</label>
+            <input type="number" name="media" id="imedia" min="0"max="10" placeholder="0 a 10" required step="0.1" value="5">
+        </p>
+
+        <!-- Mês -->
+
+        <p>
+            <label for="imes">Mês:</label>
+            <input type="month" name="mes" id="imes" required>
+        </p>
+
+        <!-- Dia da prova -->
+
+        <p>
+            <label for="idia">Dia da prova:</label>
+            <input type="date" name="dia_prova" id="idia" required >
+        </p>
+
+        <!-- Hora da prova -->
+
+        <p>
+            <label for="ihora">Hora da prova:</label>
+            <input type="time" name="hora_prova" id="ihora" required>
+        </p>
+
+        <!-- Enviar e Limpar -->
+
+        <p>
+            <button type="submit">Enviar</button>
+            <button type="reset">Limpar</button>
+        </p>
+    </form>
+</body>
+</html>

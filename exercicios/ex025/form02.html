@@ -1,0 +1,41 @@
+<!doctype html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Formulario com senha</title>
+    <style>
+        input {
+            margin: 5px;
+            padding: 5px;
+            border-radius: 10px;
+            border: 1px solid #000000;
+        }
+    </style>
+  </head>
+  <body>
+    <form action="form01.html" method="get" autocomplete="on">
+
+        <!-- Usuário -->
+
+      <p>
+        <label for="iusu">Usuário:</label>
+        <input type="text" name="usu" id="iusu" required minlength="4" maxlength="15" size="15" placeholder="Digite seu nome aqui" autocomplete="username"/>
+      </p>
+
+        <!-- Senha -->
+
+      <p>
+        <label for="isenha">Senha:</label>
+        <input type="password" name="senha" id="isenha" required minlength="8" maxlength="20" size="15" placeholder="Digite sua senha aqui" autocomplete="new-password"/>
+      </p>
+
+        <!-- Enviar e Limpar -->
+
+      <p>
+        <input type="submit" value="Enviar" class="botto" />
+        <input type="reset" value="Limpar" class="bottoes" />
+      </p>
+    </form>
+  </body>
+</html>
