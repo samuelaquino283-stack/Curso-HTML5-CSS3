@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Checkbox</title>
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        label {
+            font-weight: bolder;
+        }
+
+        button {
+            border-radius: 10px;
+            padding: 5px;
+            border: 1px solid black;
+            margin: 10px;
+        }
+
+        fieldset {
+            border-radius: 10px;
+            padding: 10px;
+            border: 1px solid black;
+            margin: 10px;
+        }
+
+        fieldset legend {
+            font-weight: bolder;
+            color: rgb(40, 37, 255);
+        }
+
+        h1 {
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <h1>Formulario Checkbox</h1>
+
+    <!-- Formulario -->
+
+    <form action="sucesso.html" method="get">
+
+        <fieldset>
+            <legend>Sexo</legend>
+
+            <!-- Sexo Masculino -->
+
+            <input type="radio" name="sexo" id="isexo_masculino" value="M">
+            <label for="isexo_masculino">Masculino</label> <br>
+
+            <!-- Sexo Feminino -->
+
+            <input type="radio" name="sexo" id="isexo_feminino" value="F">
+            <label for="isexo_feminino">Feminino</label>
+        </fieldset>
+
+        <fieldset>
+            <legend>Esportes Favoritos</legend>
+            
+            
+            <input type="checkbox" name="esport-futebol" id="fut"> 
+            <label for="fut">futebol</label> <br>
+
+            
+            <input type="checkbox" name="esport-basquet" id="bas"> 
+            <label for="bas">basquet</label> <br>
+
+            
+            <input type="checkbox" name="esport-natacao" id="nat"> 
+            <label for="nat">natacao</label> <br>
+
+            
+            <input type="checkbox" name="esport-tenis" id="ten"> 
+            <label for="ten">tenis</label> <br>
+        </fieldset>
+
+            <!-- Enviar e Limpar -->
+
+        <p style="text-align: center;">
+            <button type="submit">Enviar</button>
+            <button type="reset">Limpar</button>
+        </p>
+    </form>
+</body>
+</html>

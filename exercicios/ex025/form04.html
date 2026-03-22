@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario com E-mail e Senha</title>
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        input {
+            border-radius: 10px;
+            padding: 5px;
+            border: 1px solid black;
+            margin: 10px;
+        }
+
+        label {
+            font-weight: bolder;
+        }
+
+        button {
+            border-radius: 10px;
+            padding: 5px;
+            border: 1px solid black;
+            margin: 10px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Formulario com E-mail e Senha</h1>
+
+    <!-- Formulario -->
+
+    <form action="sucesso.html" method="get">
+
+        <fieldset>
+            <legend>
+                <h2>Dados de Acesso</h2>
+            </legend>
+            <!-- Email -->
+            <p>
+                <label for="iemail">E-mail:</label>
+                <input type="email" name="e-mail" id="iemail" required placeholder="Digite seu e-mail aqui" autocomplete="email">
+            </p>
+            <!-- Telefone -->
+            <p>
+                <label for="itelefone">Telefone:</label>
+                <input type="tel" name="telefone" id="itelefone" required placeholder="Digite seu telefone aqui" autocomplete="tel">
+            </p>
+        </fieldset>
+
+        <!-- Enviar e Limpar -->
+
+        <p>
+            <button type="submit">Enviar</button>
+            <button type="reset">Limpar</button>
+        </p>
+    </form>
+</body>
+</html>
