@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario</title>
+</head>
+<body>
+    <form action="sucesso.html" method="get">
+        <p>
+            <label for="inumero1">Numero1:</label>
+            <input type="range" name="numero1" id="inumero1" min="0" max="50" required oninput="mostrar_numero.innerHTML = Number(numero1.value)">
+            <output id="mostrar_numero">5</output>
+        </p>
+
+        <p>
+            <input type="submit" value="Enviar">
+            <input type="reset" value="Limpar">
+        </p>
+    </form>
+</body>
+</html>

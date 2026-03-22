@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario</title>
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            display: flex;
+            height: 98vh;
+            justify-content: center;
+        }
+
+        input {
+            margin: 5px;
+            border: 1px solid #000000;
+            border-radius: 10px;
+            padding: 5px;
+        }
+
+        label {
+            font-size: 20px;
+        }
+    </style>
+</head>
+<body>
+    <form action="sucesso.html" method="get">
+        <p>
+            <label for="inumero1">Numero1:</label>
+            <input type="number" name="numero1" id="inumero1" min="0" max="50" required oninput="isoma.innerHTML = Number(numero1.value) + Number(numero2.value)">
+        </p>
+
+        <p>
+            <label for="inumero2">Numero2:</label>
+            <input type="number" name="numero2" id="inumero2" min="0" max="50" required oninput="isoma.innerHTML = Number(numero1.value) + Number(numero2.value)">
+        </p>
+
+        <label for="isoma">Soma:</label>
+        <output name="soma" id="isoma">0</output>
+
+        <p>
+            <input type="submit" value="Enviar">
+            <input type="reset" value="Limpar">
+    </form>
+</body>
+</html>
