@@ -1,0 +1,73 @@
+@charset "UTF-8";
+
+/* Estilo para telas */
+
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+html {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+    height: 100vh;
+}
+
+header {
+    background-color: rgba(119, 136, 153, 0.493);
+}
+
+header h1 {
+    text-align: center;
+    padding: 40px;
+}
+
+menu {
+    display: inline-block;
+    background-color: rgb(119, 136, 153);
+    width: 100%;
+    padding-top: 10px;
+}
+
+ul {
+    list-style: none;
+    display: flex;
+    gap: 10px;
+}
+
+li {
+    padding: 5px;
+    background-color: rgba(133, 133, 133, 0.842);
+    border: 1px solid black;
+    color: white;
+    border-radius: 10px;
+    margin-left: 10px;
+    margin-bottom: 10px;
+    transition-duration: 0.3s;
+}
+
+li:hover {
+    cursor: pointer;
+    background-color: rgba(173, 174, 175, 0.493);
+    transform: translate(-2px, -2px);
+}
+
+main {
+    padding: 20px;
+    max-width: 700px;
+    margin: auto;
+    text-align: justify;
+    background-color: rgba(119, 136, 153, 0.164);
+    border-radius: 0px 0px 20px 20px;
+}
+
+main p {
+    line-height: 1.5em;
+    margin-bottom: 10px;
+}
+
+main h2 {
+    text-align: center;
+}
